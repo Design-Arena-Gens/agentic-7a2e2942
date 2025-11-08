@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wind Turbine Reliability Lab</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+        line-height: 1.5;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        min-height: 100vh;
+        background: radial-gradient(circle at top, #063970, #020b1a 70%);
+        color: #f5f7fa;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .card {
+        max-width: 720px;
+        background: rgba(6, 19, 40, 0.85);
+        border-radius: 18px;
+        padding: 48px 40px;
+        box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
+      }
+      h1 {
+        font-size: 2.6rem;
+        margin-bottom: 0.5rem;
+      }
+      p {
+        font-size: 1.1rem;
+        margin-bottom: 1.25rem;
+        color: rgba(241, 245, 255, 0.88);
+      }
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.45rem;
+        background: rgba(26, 148, 255, 0.16);
+        border: 1px solid rgba(26, 148, 255, 0.45);
+        border-radius: 999px;
+        padding: 0.4rem 1rem;
+        font-size: 0.9rem;
+        letter-spacing: 0.02em;
+        margin-bottom: 1.5rem;
+      }
+      .cta {
+        display: inline-block;
+        margin-top: 1.25rem;
+        padding: 0.75rem 1.6rem;
+        border-radius: 999px;
+        background: linear-gradient(135deg, #60a5fa, #2563eb);
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        transition: transform 180ms ease, box-shadow 180ms ease;
+      }
+      .cta:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 24px rgba(37, 99, 235, 0.35);
+      }
+      code {
+        background: rgba(15, 23, 42, 0.78);
+        border: 1px solid rgba(99, 102, 241, 0.35);
+        padding: 0.35rem 0.6rem;
+        border-radius: 8px;
+        font-size: 0.95rem;
+      }
+      ul {
+        text-align: left;
+        max-width: 520px;
+        margin: 1.4rem auto 0;
+        padding-left: 1.2rem;
+      }
+      li {
+        margin-bottom: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <span class="badge">Streamlit + Scikit-learn Simulation</span>
+      <h1>Wind Turbine Failure Protection Lab</h1>
+      <p>
+        Deploy the Python-powered Streamlit dashboard to run the full simulation, train
+        the failure protection model, and explore live sensor scenarios. Launch it on
+        Streamlit Cloud or locally with the included source.
+      </p>
+      <p>
+        <strong>Quick start:</strong>
+        <br />
+        <code>pip install -r requirements.txt</code>
+        <br />
+        <code>streamlit run app.py</code>
+      </p>
+      <ul>
+        <li>Generate synthetic SCADA telemetry for wind turbines</li>
+        <li>Train a Random Forest failure classifier with safety thresholds</li>
+        <li>Simulate live protective shutdown decisions and energy KPIs</li>
+      </ul>
+      <a href="https://streamlit.io/cloud" class="cta" target="_blank" rel="noreferrer">
+        Deploy to Streamlit Cloud
+      </a>
+    </main>
+  </body>
+</html>
